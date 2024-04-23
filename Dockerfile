@@ -1,5 +1,8 @@
 FROM python:3.11.3-slim-bullseye
 
+RUN apt-get update
+RUN apt-get install sqlite3
+
 
 WORKDIR /app
 
